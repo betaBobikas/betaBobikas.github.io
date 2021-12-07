@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>the test page of HTML and JavaScript crossing</title>
+</head>
+<body>
+<div style="background-image: url('the-big-universe-is-here-4k-q4.jpg');">
+<div>
+
+	<input type="button" id="langelis11" style="width: 50px; height: 50px;" value=' ' onclick="update(0);"><input type="button" value=' ' id="langelis12" style="width: 50px; height: 50px;" onclick="update(1);"><input type="button" value=' ' style="width: 50px; height: 50px;" id="langelis13" onclick="update(2);"><br>
+	<input type="button" id="langelis21" style="width: 50px; height: 50px;" value=' ' onclick="update(3);"><input type="button" value=' ' id="langelis22" style="width: 50px; height: 50px;" onclick="update(4);"><input type="button" value=' ' style="width: 50px; height: 50px;" id="langelis23" onclick="update(5);"><br>
+	<input type="button" id="langelis31" style="width: 50px; height: 50px;" value=' ' onclick="update(6);"><input type="button" value=' ' id="langelis32"  style="width: 50px; height: 50px;"onclick="update(7);"><input type="button" value=' ' style="width: 50px; height: 50px;" id="langelis33" onclick="update(8);"><br>
+</div>
+
+<p style="color:LightGray;"> <id="potato"><strong><i> hello.</p>
+
+<video width="480" height="360" controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
+<h1 style="color:Gray;">Helloo</h1>
+<p style="color:LightGray;">Welcome to my</p>
+<p style="color:LightGray;">Terrible, Horrifying and Amog Us Page.</p>
+<p style="color:LightGray;">(this is a test page, my first one ever done)</p>
+<p style="background-color:Tomato;">Down |</p>
+<p style="background-color:Orange;">Down |</p>
+<p style="background-color:MediumSeaGreen;">Down |</p>
+<p style="background-color:DodgerBlue;">Down |</p>
+<p style="background-color:SlateBlue;">Down |</p>
+<p style="background-color:Violet;">Down \/</p>
+<br>
+<h1 id="atsakymas"></h1>
+<input id="potatoes" oninput="didinti();">
+
+
+
+<canvas id="myCanvas" width="1200" height="1200" style="border:1px solid #000000;">
+Your browser does not support the HTML canvas tag.
+</canvas>
+<input type="number" oninput="greitis = this.value;">
+
+ 
+
+<script>
+//Canvas ir javascript sąsaja
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ 
+
+//Kintamųjų deklaracija
+var i = 0;
+var kryptis = 1;
+var greitis = 5;
+var i_vertikaliai = 0;
+var kryptis_vertikaliai = 1;
+var greitis_vertikaliai = 10;
+var raudona = 0;
+var zalia = 0;
+var melyna = 0;
+
+ 
+
+
+//Kvadrato piešimo funkcijos deklaracija
+function piesk(x, y, width, height) {
+    //ctx.clearRect(0, 0, 1200, 1200); //Šita eilutė išvalo visą drobę.
+    melyna = melyna + 1;
+    zalia = zalia + 2;
+    raudona = raudona + 4;
+    if (melyna > 255) melyna = 4;
+    if (zalia > 255) zalia = 9;
+    if (raudona > 255) raudona = 3;
+    ctx.fillStyle = 'rgb('+raudona+','+zalia+','+melyna+')'; // Nudažys visas būsimas figūras mėlynai
+    ctx.fillRect(x, y, width, height); //Nupiešia kvadratą
+    i = i + kryptis*greitis;
+    if (i > 1050) kryptis = -1; //pakeičia judėjimo kryptį, kai i daugiau nei 1050
+    if (i < 100) kryptis = 1; //pakeičia judėjimo kryptį, kai i mažiau nei 100
+    i_vertikaliai = i_vertikaliai + kryptis_vertikaliai*greitis_vertikaliai;
+    if (i_vertikaliai > 1050) kryptis_vertikaliai = -1; //pakeičia judėjimo kryptį, kai i daugiau nei 1050
+    if (i_vertikaliai < 100) kryptis_vertikaliai = 1; //pakeičia judėjimo kryptį, kai i mažiau nei 100
+    setTimeout(piesk, 10, i, i_vertikaliai, 30, 30);
+}
+
+ 
+
+piesk(i, 50, 30, 30);
+
+
+</script>
+
+<div class="Cards">
+  <h2>Number 3</h2>
+  <p>The Log</p>
+</div>
+
+<div class="Cards">
+  <h2>Number 2</h2>
+  <p>Ram Rider</p>
+</div>
+
+<div class="Cards">
+  <h2>Number 1</h2>
+  <p>Tesla</p>
+</div>
+<br>
+<h2> <a href="file:///C:/Users/6-7%20klas%C4%97/Desktop/sus%20folder/number%202.html" target="_b">Another page!</a></h2>
+<h2> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_b"> not sus at all. *nervous laughter* </a></h2>
+<audio controls autoplay>
+  <source src="heheheha Bass boosted.ogg" type="audio/ogg">
+  <source src="heheheha Bass boosted.mp3" type="audio/mpeg">
+juan the horse.
+</audio>
+<br>
+<br>
+<img src="Photos/sussy.jpg" id="paveiksliukas" alt="mog us?!">
+
+
+</body>
+</html>
