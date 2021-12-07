@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>the test page of HTML and JavaScript crossing</title>
+</head>
+<body>
+<div style="background-image: url('the-big-universe-is-here-4k-q4.jpg');">
+<div>
+
+	<input type="button" id="langelis11" style="width: 50px; height: 50px;" value=' ' onclick="update(0);"><input type="button" value=' ' id="langelis12" style="width: 50px; height: 50px;" onclick="update(1);"><input type="button" value=' ' style="width: 50px; height: 50px;" id="langelis13" onclick="update(2);"><br>
+	<input type="button" id="langelis21" style="width: 50px; height: 50px;" value=' ' onclick="update(3);"><input type="button" value=' ' id="langelis22" style="width: 50px; height: 50px;" onclick="update(4);"><input type="button" value=' ' style="width: 50px; height: 50px;" id="langelis23" onclick="update(5);"><br>
+	<input type="button" id="langelis31" style="width: 50px; height: 50px;" value=' ' onclick="update(6);"><input type="button" value=' ' id="langelis32"  style="width: 50px; height: 50px;"onclick="update(7);"><input type="button" value=' ' style="width: 50px; height: 50px;" id="langelis33" onclick="update(8);"><br>
+</div>
+
+<p style="color:LightGray;"> <id="potato"><strong><i> hello.</p>
+
+<video width="480" height="360" controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+<h1 style="color:Gray;">mogus sussy</h1>
+<p style="color:LightGray;">sussay amog</p>
+<p style="color:LightGray;">dabebi?</p>
+<p style="color: LightGray;">Golden Amog Us Da Baby Rollercoaster Machine Gun?!</p>
+<p style="background-color:Tomato;">SUSSAY?!</p>
+<p style="background-color:Orange;">SUSSAY?!</p>
+<p style="background-color:MediumSeaGreen;">SUSSAY?!</p>
+<p style="background-color:DodgerBlue;">SUSSAY?!</p>
+<p style="background-color:SlateBlue;">SUSSAY?!</p>
+<p style="background-color:Violet;">SUSSAY?!</p>
+<br>
+<h1 id="atsakymas"></h1>
+<input id="potatoes" oninput="didinti();">
+<script>
+
+function didinti() { 
+	document.getElementById("paveiksliukas").style.width=document.getElementById("potatoes").value+"px";
+
+}
+</script>
+<br>
+<h2> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_b"> not sus at all. *nervous laughter* </a></h2>
+<br>
+<img src="Photos/sussy.jpg" id="paveiksliukas" alt="mog us?!">
+
+
+
+<script>
+
+var ejimas = 0;
+console.log(18%8);
+var gameBoard = [];
+gameBoard[0] = document.getElementById("langelis11");
+gameBoard[1] = document.getElementById("langelis12");
+gameBoard[2] = document.getElementById("langelis13");
+gameBoard[3] = document.getElementById("langelis21");
+gameBoard[4] = document.getElementById("langelis22");
+gameBoard[5] = document.getElementById("langelis23");
+gameBoard[6] = document.getElementById("langelis31");
+gameBoard[7] = document.getElementById("langelis32");
+gameBoard[8] = document.getElementById("langelis33");
+
+
+function update(index) {
+	if (gameBoard[index].value == ' ') {
+		if (ejimas%2 == 0)
+			gameBoard[index].value = "X";
+		else gameBoard[index].value = "O";
+		ejimas = ejimas+1;
+	}
+	//Reikia laimėjimo sąlygos
+}
+
+/*
+public class TicTacToe
+
+	public static void main(String[] args) {
+		
+		char [][] gameBoard = {{' ', '|', ' ', '|', ' '}
+				{'-', '+', '-', '+', '-'},
+				{' ', '|', ' ', '|', ' '},
+				{'-', '+', '-', '+', '-'},
+				{' ', '|', ' ', '|', ' '}};
+		
+		printGameBoard(gameBoard);
+		
+		Scanner Scan = new Scanner(System.in);
+		System.out.println("Enter your placement (1-9):");
+		int pos = scan.nextInt();
+		
+		System.out.println(pos);
+		
+		switch(pos) {
+			case 1:
+				gameBoard[0][0] = 'X';
+				break;
+			case 2:
+				gameBoard[0][2] = 'X';
+				break;
+			case 3:
+				gameBoard[0][4] = 'X';
+				break;
+			case 4:
+				gameBoard[2][0] = 'X';
+				break;
+			case 5:
+				gameBoard[2][2] = 'X';
+				break;
+			case 6:
+				gameBoard[2][4] = 'X';
+				break;
+			case 7:
+				gameBoard[4][0] = 'X';
+				break;
+			case 8:
+				gameBoard[4][2] = 'X';
+				break;
+			case 9:
+				gameBoard[4][4] = 'X';
+				break;
+		}
+	}
+	
+	public static void printGameBoard(char [] [] gameBoard) { 
+		for(char[] row : gameBoard) {
+			for(char c : row) {
+				System.out.print(c);
+			}
+			System.out.println();
+			
+			*/
+</script>
+</body>
+</html>
