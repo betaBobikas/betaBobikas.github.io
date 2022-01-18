@@ -67,8 +67,8 @@ function piesk(x, y, width, height) {
     melyna = melyna + 19;
     zalia = zalia + 21;
     raudona = raudona + 16;
-    if (melyna > 255) melyna = 19;
-    if (zalia > 255) zalia = 23;
+    if (melyna > 255) melyna = 1;
+    if (zalia > 255) zalia = 1;
     if (raudona > 255) raudona = 17;
     ctx.fillStyle = 'rgb('+raudona+','+zalia+','+melyna+')'; // Nudažys visas būsimas figūras mėlynai
     ctx.fillRect(x, y, width, height); //Nupiešia kvadratą
